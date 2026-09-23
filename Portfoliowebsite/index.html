@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Software engineering portfolio demonstrating API integration and DOM manipulation."
+  />
+  <title>Gian | Software Engineer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="logo" href="#home">GO</a>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#github">GitHub API</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <button id="themeToggle" class="icon-button" aria-label="Toggle dark mode">
+        🌙
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <p class="eyebrow">SOFTWARE ENGINEER</p>
+      <h1>Hi, I'm Gian!</h1>
+      <p class="hero-copy">
+        I build clean, practical applications with Java, SQL, and JavaScript.
+        This portfolio also demonstrates API integration and DOM manipulation.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button primary" href="#projects">View Projects</a>
+        <a class="button secondary" href="#github">See GitHub API Demo</a>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">ABOUT</p>
+        <h2>A little about me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="card">
+          <h3>Background</h3>
+          <p>
+            I'm a software engineer interested in full stack development,
+            databases, APIs, and building useful applications!
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Skills</h3>
+          <div class="skill-list" id="skillList"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">PROJECTS</p>
+        <h2>Featured work</h2>
+        <p>
+          These cards are created dynamically with JavaScript instead of being
+          hard-coded into the HTML.
+        </p>
+      </div>
+
+      <div class="filter-buttons" id="filterButtons">
+        <button class="filter active" data-filter="All">All</button>
+        <button class="filter" data-filter="Java">Java</button>
+        <button class="filter" data-filter="SQL">SQL</button>
+        <button class="filter" data-filter="JavaScript">JavaScript</button>
+      </div>
+
+      <div id="projectGrid" class="project-grid"></div>
+    </section>
+
+    <section id="github" class="section github-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">API INTEGRATION</p>
+          <h2>Live GitHub repositories</h2>
+          <p>
+            This section calls the GitHub REST API with <code>fetch()</code>
+            and adds the returned repository data to the page.
+          </p>
+        </div>
+
+        <div class="github-controls">
+          <input
+            id="githubUsername"
+            type="text"
+            value="octocat"
+            placeholder="Enter a GitHub username"
+            aria-label="GitHub username"
+          />
+          <button id="loadReposBtn" class="button primary">Load Repositories</button>
+        </div>
+
+        <p id="apiStatus" class="status" aria-live="polite"></p>
+        <div id="repoGrid" class="project-grid"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">CONTACT</p>
+        <h2>Let's connect</h2>
+      </div>
+
+      <form id="contactForm" class="contact-form">
+        <label>
+          Name
+          <input id="name" type="text" required />
+        </label>
+
+        <label>
+          Email
+          <input id="email" type="email" required />
+        </label>
+
+        <label>
+          Message
+          <textarea id="message" rows="5" required></textarea>
+        </label>
+
+        <button class="button primary" type="submit">Send Message</button>
+        <p id="formMessage" class="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p id="copyright"></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
