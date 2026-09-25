@@ -1,0 +1,24 @@
+2026-09-23 10:59:31 INFO  Account 1 successfully logged in.
+2026-09-23 10:59:39 INFO  Account 1 checked balance.
+2026-09-23 10:59:45 INFO  Account 1 deposited $5.
+2026-09-23 10:59:51 INFO  Account 1 logged out.
+2026-09-23 11:00:26 ERROR Failed login attempt for account 1.
+2026-09-23 11:02:54 INFO  Account 13 successfully registered.
+2026-09-23 11:03:12 ERROR Account registration failed: PIN must be 4 digits.
+2026-09-23 11:03:22 INFO  Account 1 successfully logged in.
+2026-09-23 11:03:29 INFO  Account 1 logged out.
+2026-09-23 11:03:43 ERROR Failed login attempt for account 1.
+2026-09-23 11:04:23 INFO  Account 14 successfully registered.
+2026-09-23 11:04:31 INFO  Account 1 successfully logged in.
+2026-09-23 11:04:48 INFO  Account 1 deposited $10.
+2026-09-23 11:05:04 ERROR Action failed for account 1: Deposit amount must be greater than zero.
+2026-09-23 11:05:08 ERROR Action failed for account 1: Deposit amount must be greater than zero.
+2026-09-23 11:05:17 INFO  Account 1 withdrew $5.
+2026-09-23 11:05:37 ERROR Action failed for account 1: Insufficient funds.
+2026-09-23 11:05:42 ERROR Action failed for account 1: Withdrawal amount must be greater than zero.
+2026-09-23 11:05:57 INFO  Account 1 transferred $5 to account 2.
+2026-09-23 11:06:08 ERROR Action failed for account 1: You cannot transfer money to the same account.
+2026-09-23 11:07:11 ERROR Action failed for account 1: Receiving account does not exist.
+2026-09-23 11:07:30 ERROR Action failed for account 1: Insufficient funds.
+2026-09-23 11:07:35 INFO  Account 1 viewed transaction history.
+2026-09-23 11:08:04 INFO  Account 1 logged out.
