@@ -1,0 +1,22 @@
+
+# Defines the student data we can retrieve
+type Student {
+    id: ID!
+    firstName: String
+    lastName: String
+    email: String
+}
+
+# QUERY: Used to retrieve data
+type Query {
+    studentById(id: ID!): Student
+}
+
+# MUTATION: Used to create a student
+type Mutation {
+    addStudent(
+        firstName: String!
+        lastName: String!
+        email: String!
+    ): Student
+}

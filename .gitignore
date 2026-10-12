@@ -1,0 +1,11 @@
+# Separate Git repository
+java-fs/
+
+# Mac files
+.DS_Store
+
+# Application logs
+**/logs/
+
+# ZIP archives
+*.zip
